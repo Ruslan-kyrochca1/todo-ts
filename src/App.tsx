@@ -1,10 +1,9 @@
+import TodoTasks from "./pages/TodoTasks"
 
 function App() {
 
   return (
-    <>
-      todo
-    </>
+    <TodoTasks/>
   )
 }
 
