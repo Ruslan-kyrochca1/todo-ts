@@ -1,4 +1,5 @@
-import TaskCard from './TaskCard'
+import TaskCard from '../TaskCard/TaskCard'
+import styles from "./TasksList.module.scss"
 
 interface Task {
     id: number,
@@ -16,7 +17,7 @@ const TasksList = () => {
     //Массив значений - временное решение перед использованием API. 
 
   return (
-    <div className='tasksList'>
+    <div className={styles.tasksList}>
         {taskArr.map((task: Task) => {
             return <TaskCard key={task.id} task={task}/>
         })}

@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+.taskCard{
+    display: block;
+    padding: 10px;
+    background-color: $primary-color;
+    text-align: center;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.taskMarked{
+    text-decoration: line-through;
+}
