@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import styles from "./TaskCard.module.scss"
 
 interface Task {
     id: number,
@@ -15,7 +16,7 @@ const TaskCard: React.FC<TaskCardProps> = ({ task}) => {
   const [marked, setMarked] = useState(task.marked)
     
   return (
-    <div className={ marked ? `task-card` : `task-card task-marked` } key={task.id}>
+    <div className={`${styles.taskCard} ${marked ? "" : styles.taskMarked }`} key={task.id}>
       <h2 className='task-title'>{task.name}</h2>
       <p className='task-descr'>{task.descr}</p>
       <button className='task-button' onClick={() => {

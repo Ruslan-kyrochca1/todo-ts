@@ -1,5 +1,5 @@
 import TodoTasks from "./pages/TodoTasks";
-import "./App.scss";
+import "./styles/index.scss";
 
 function App() {
 
